@@ -1,0 +1,25 @@
+Solving one Problem statement in java
+
+Problem Statement : Find the factorial of a given number
+
+public static void main(String[] args) { 
+  
+    // input number whose factorial is to be found 
+    int number = 5; 
+    int factorial = fact(number); 
+    System.out.println("Factorial of " + number + " is: " + factorial); 
+} 
+  
+static int fact(int n) 
+{ 
+    int output; 
+    if(n==1){ 
+      return 1; 
+    } 
+  
+    // Recursion: Function calling itself!! 
+    output = fact(n-1)* n; 
+    return output; 
+} 
+
+Output : Factorial of 5 is: 120
